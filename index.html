@@ -2,63 +2,144 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Moja pierwsza strona – Dzień 2</title>
+    <title>Portfolio – Michał Bystroń | Junior Developer</title>
+    <meta name="description" content="Portfolio junior developera – HTML, CSS, Git. Nauka programowania krok po kroku.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Moja pierwsza strona HTML</h1>
-        <p>Uczę się zostać Full Stack Developerem.</p>
+        <h1>Michał Bystroń</h1>
+        <p>Junior Developer (Frontend / Full Stack – w trakcie nauki)</p>
     </header>
 
+    <!-- NAWIGACJA -->
     <nav>
         <a href="#o-mnie">O mnie</a> |
-        <a href="#oferta">Co chcę robić</a> |
+        <a href="#umiejetnosci">Umiejętności</a> |
+        <a href="#projekty">Projekty</a> |
+        <a href="#cele">Cele</a> |
         <a href="#kontakt">Kontakt</a>
     </nav>
 
+    <!-- GŁÓWNA ZAWARTOŚĆ -->
     <main>
+
+        <!-- O MNIE -->
         <section id="o-mnie">
             <h2>O mnie</h2>
-            <p>Cześć! Nazywam się Michał i uczę się programowania od zera, aby tworzyć własne aplikacje.</p>
-            <p><img src="kot.jpg" alt="Moje zdjęcie" width="200"></p>
+
+            <p>
+                Cześć! Nazywam się <strong>Michał</strong> i uczę się programowania od podstaw.
+                Moim celem jest zostać <strong>Full Stack Developerem</strong> i tworzyć własne aplikacje webowe.
+            </p>
+
+            <p>
+                Aktualnie skupiam się na solidnych fundamentach:
+                HTML, CSS, Git oraz pracy z repozytoriami GitHub.
+            </p>
+
+            <p>
+                <strong>Status:</strong> Junior Developer (aktywnie uczący się 🚀)
+            </p>
+
+            <img src="kot.jpg" alt="Zdjęcie profilowe" width="200">
         </section>
 
-        <section id="oferta">
-            <h2>Co chcę robić</h2>
+        <!-- UMIEJĘTNOŚCI -->
+        <section id="umiejetnosci">
+            <h2>Umiejętności</h2>
+
+            <h3>Technologie</h3>
             <ul>
-                <li>Tworzyć aplikacje webowe</li>
-                <li>Budować własne SaaS-y</li>
-                <li>Automatyzować procesy w biznesie</li>
+                <li>HTML5 – struktura stron</li>
+                <li>CSS3 – podstawy stylowania</li>
+                <li>Git – wersjonowanie kodu</li>
+                <li>GitHub – repozytoria i commitowanie</li>
+            </ul>
+
+            <h3>Narzędzia</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Terminal / PowerShell</li>
+                <li>Przeglądarki DevTools</li>
             </ul>
         </section>
 
+        <!-- PROJEKTY -->
+        <section id="projekty">
+            <h2>Projekty</h2>
+
+            <article>
+                <h3>📄 Moja pierwsza strona HTML</h3>
+                <p>
+                    Prosty projekt wykonany w ramach nauki HTML i CSS.
+                    Zawiera strukturę strony, nawigację, sekcje oraz formularz kontaktowy.
+                </p>
+                <p>
+                    <strong>Status:</strong> Zakończony
+                </p>
+            </article>
+
+            <article>
+                <h3>🚧 Portfolio Juniora</h3>
+                <p>
+                    Rozwijane portfolio dokumentujące proces nauki programowania
+                    oraz kolejne projekty webowe.
+                </p>
+                <p>
+                    <strong>Status:</strong> W trakcie rozwoju
+                </p>
+            </article>
+        </section>
+
+        <!-- CELE -->
+        <section id="cele">
+            <h2>Cele</h2>
+
+            <ul>
+                <li>Opanować HTML i CSS na poziomie junior</li>
+                <li>Nauczyć się JavaScript</li>
+                <li>Stworzyć pierwszą aplikację webową</li>
+                <li>Zdobyć pierwszą pracę jako Junior Developer</li>
+            </ul>
+        </section>
+
+        <!-- KONTAKT -->
         <section id="kontakt">
             <h2>Kontakt</h2>
-            <p>Na razie możesz mnie znaleźć tutaj:</p>
+
             <ul>
-                <li><a href="https://github.com/skarabeusz86" target="_blank">Mój GitHub (na razie pusty 😉)</a></li>
+                <li>
+                    GitHub:
+                    <a href="https://github.com/skarabeusz86" target="_blank">
+                        github.com/skarabeusz86
+                    </a>
+                </li>
             </ul>
 
-            <h3>Formularz kontaktowy (na przyszłość)</h3>
-            <form>
+            <h3>Formularz kontaktowy</h3>
+            <form action="#" method="post">
                 <label for="name">Imię:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" placeholder="Twoje imię" required><br><br>
 
                 <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required><br><br>
 
                 <label for="message">Wiadomość:</label><br>
-                <textarea id="message" name="message" rows="4"></textarea><br><br>
+                <textarea id="message" name="message" rows="4" placeholder="Twoja wiadomość"></textarea><br><br>
 
-                <button type="submit">Wyślij (na razie nic nie zrobi 😄)</button>
+                <button type="submit">Wyślij</button>
             </form>
         </section>
+
     </main>
 
+    <!-- STOPKA -->
     <footer>
-        <p>&copy; 2025 Michał – nauka programowania krok po kroku.</p>
+        <p>&copy; 2025 Michał Bystroń</p>
+        <p>Junior Developer | HTML • CSS • Git</p>
     </footer>
 
 </body>
